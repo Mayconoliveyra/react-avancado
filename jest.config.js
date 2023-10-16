@@ -4,9 +4,10 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
-    '!src/app/**', // should be tested in e2e
+    '!src/app/**',
     '!src/lib/registry.tsx',
     '!src/types/**',
+    '!src/**/stories.tsx',
     '!src/styles/**',
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
